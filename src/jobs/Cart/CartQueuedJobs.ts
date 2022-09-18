@@ -38,6 +38,7 @@ export class CartQueuedJobs extends QueuedJobsHandler<ErrorCartTypes> {
           lines: data.lines,
           promoCodeDiscount: data.promoCodeDiscount,
           shippingMethod: data.shippingMethod,
+          shippingPrice: data.shippingPrice,
         });
       }
     }

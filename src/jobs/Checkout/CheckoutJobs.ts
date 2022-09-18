@@ -137,6 +137,7 @@ class CheckoutJobs extends JobsHandler<{}> {
       email: data?.email,
       selectedShippingAddressId,
       shippingAddress: data?.shippingAddress,
+      shippingPrice: data?.shippingPrice,
     });
     return { data };
   };
@@ -169,6 +170,7 @@ class CheckoutJobs extends JobsHandler<{}> {
       billingAddress: data?.billingAddress,
       billingAsShipping: !!billingAsShipping,
       selectedBillingAddressId,
+      shippingPrice: data?.shippingPrice,
     });
     return { data };
   };
@@ -206,6 +208,7 @@ class CheckoutJobs extends JobsHandler<{}> {
       billingAsShipping: false,
       email: data?.email,
       selectedBillingAddressId,
+      shippingPrice: data?.shippingPrice,
     });
     return { data };
   };
@@ -234,6 +237,7 @@ class CheckoutJobs extends JobsHandler<{}> {
       ...checkout,
       promoCodeDiscount: data?.promoCodeDiscount,
       shippingMethod: data?.shippingMethod,
+      shippingPrice: data?.shippingPrice,
     });
     return { data };
   };

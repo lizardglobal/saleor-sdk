@@ -52,6 +52,7 @@ export class JobsManager {
     params: JobFunctionParameters<G, J, P>[0]
   ) {
     const func = this.jobs[jobGroup][jobName];
+    console.log('jbsmanager');
 
     if (typeof func === "function") {
       return func(params);
